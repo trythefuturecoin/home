@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="side-bar">
+            <i class="fa-solid fa-bars manu"></i>
+
+            <div class="social-link">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+
+        <div class="big-box">
+            <nav>
+                <div class="logo">
+                    <a href="#"><i class="fa-brands fa-bitcoin"></i></a>
+                </div>
+                
+                <div class="nav-links">
+                    <a class="active" href="#">Home</a>
+                    <a href="joining-form.html">Join</a>
+                </div>
+            </nav>
+
+            <div class="content">
+                <div class="div-text">
+                    <h1>Earn $10 Daily!</h1>
+                    <h3>Amazing Reffering Commision <br> Instant $2.5 Network Commision</h3>
+                    <a href="joining-form.html" class="btn">Join Now</a>
+                </div>
+
+                <div class="div-img">
+                    <img id="big-img" src="images/bitcoin1.png.png" alt="">
+                </div>
+
+                <div class="div-color">
+                    <span onclick="bitcoins('images/bitcoin1.png.png')"></span>
+                    <span onclick="bitcoins('images/bitcoin2.png.png')"></span>
+                    <span onclick="bitcoins('images/bitcoin3.png.png')"></span>
+                </div>
+            </div>
+            <div class="small-img">
+                <img onclick="bitcoins(this.src)" class="small-img1" src="images/bitcoin1.png.png" alt="">
+                <img onclick="bitcoins(this.src)" class="small-img2" src="images/bitcoin2.png.png" alt="">
+                <img onclick="bitcoins(this.src)" class="small-img3" src="images/bitcoin3.png.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let bigImage = document.getElementById('big-img');
+
+        function bitcoins(bitcoin){
+            bigImage.src = bitcoin
+        }
+
+    </script>
+    
+</body>
+</html>
